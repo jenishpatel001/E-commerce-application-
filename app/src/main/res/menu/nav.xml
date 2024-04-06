@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/editprofile"
+        android:title="Edit Profile"
+        android:icon="@drawable/edit"
+        />
+
+    <item
+        android:id="@+id/verifyprofile"
+        android:title="Verify your Profile"
+        android:icon="@drawable/verifyprofile"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        />
+    <item
+        android:id="@+id/aboutus"
+        android:title="About Us"
+        android:icon="@drawable/aboutus"
+
+        />
+    <item
+        android:id="@+id/contactus"
+        android:title="Contact Us"
+        android:icon="@drawable/contactus"
+
+        />
+    <item
+        android:id="@+id/logout1"
+        android:title="Logout"
+        android:icon="@drawable/lock"
+        />
+
+</group>
+    <item android:title="Communicate">
+
+        <menu>
+            <item android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="share"/>
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Firstpart">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableStart="@drawable/menu"
+                android:drawableLeft="@drawable/menu"
+                android:drawablePadding="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="53dp"
+                android:layout_marginLeft="53dp"
+                android:drawableStart="@drawable/ic_launcher_foreground"
+                android:drawableLeft="@drawable/ic_baseline_photo_camera_24" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toStartOf="@+id/cart"
+                android:layout_toLeftOf="@+id/cart"
+                android:drawableStart="@drawable/mic"
+                android:drawableLeft="@drawable/mic"
+                android:drawablePadding="15dp" />
+
+            <TextView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
+                android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+                android:drawablePadding="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:drawableTint="#EB9E9595"
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawableEnd="@drawable/ic_baseline_photo_camera_24"
+                android:drawableRight="@drawable/ic_baseline_photo_camera_24"
+                android:drawablePadding="10dp"
+                android:hint="search"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                android:padding="6dp" />
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@android:color/white"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_layout2" />
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:sliderAnimationDuration="500"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="500"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="1.5dp"
+                app:sliderIndicatorSelectedColor="@android:color/white"
+                app:sliderIndicatorUnselectedColor="@android:color/primary_text_light"
+                app:sliderScrollTimeInSec="3"
+                app:sliderStartAutoCycle="true">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_layout" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </ScrollView>
+
+</LinearLayout>

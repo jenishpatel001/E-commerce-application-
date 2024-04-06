@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "52477928367",
+    "project_id": "shivammart-8b9c6",
+    "storage_bucket": "shivammart-8b9c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52477928367:android:c024c80c5f5ceaa3dec55a",
+        "android_client_info": {
+          "package_name": "com.example.shivammart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52477928367-ra0oj7vokk5i5ej3vq4m8v6a134mg7v0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWJI4Q_Lz0-v6njly7WbK62sr34GFxKfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52477928367-ra0oj7vokk5i5ej3vq4m8v6a134mg7v0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
